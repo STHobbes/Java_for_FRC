@@ -18,25 +18,62 @@ worrying about classes, inheritance, interfaces, abstract classes, etc.
 In order to really use this project, you need to install a lot of stuff. Installation
 is quite different for our two primary platforms - windows, and Mac (OSX). I have done
 all of the OSX installation in the comfort of my very own home, and have just gone
-through the Windows installation with Kai. They are a bit different, so let's document
-the details:
+through the Windows installation with Kai and on the driver station laptop. They are a
+bit different, so let's document the details:
 
 ### Windows Install/Setup
+
+#### Installing `java`
+Go to the latest 
+[Java SE Development Kit 16 Downloads](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
+and download the
+[Windows x64 Installer](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html#license-lightbox).
+Double-click on the downloaded installer in you Downloads folder to install.
+
+Veryfy you have the correct Java installed. Close and reopen your console terminal (to make sure it
+has the most recent changes to the environment) and type the command `java --version`. You should
+get something like this:
+```
+C:\Users\frc> java --version 
+java 16.0.1 2021-04-20
+Java(TM) SE Runtime Environment (build 16.0.1+9-24)
+Java HotSpot(TM) 64-Bit Server VM (build 16.0.1+9-24, mixed mode, sharing)
+```
+
+#### Installing `python`
+See [Python Downloads](https://www.python.org/downloads/) which should give you a download
+link for the version of windows you are running. At the time I started to put together these
+notes the current python version was 3.9.5 - when we installed this on Kai's windows machine
+
+if you run python in a console or command window you should be able to type `python` and
+see something like:
+```
+C:\Users\frc> python
+Python 3.9.6 (tags/v3.9.6:0a7dcbdb13, May  3 2021, 13:17:02) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+```
+
+Type `quit()` at the `>>>` prompt to end python. What you are looking for here is that the version number
+matches the version you just installed.
+
+#### Installing `jupyter notebooks`
+`jupyter notebooks` is written in python and uses python's `pip` installer. Once you have python installed
+use the command.
+```
+C:\Users\frc> pip install notebook
+```
+You will see a lot of progress bars scroll by as notebook installs.
+
+#### Installing the `IJava` plugin for jupyter notebooks
+
+`jupyter notebooks` was originally written for python. We need to install a plugin for Java development
 
 #### Installing `git`
 See [1.5 Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) where
 there is a section on installing to windows. It notes the windows download is at
 [https://git-scm.com/download/win](https://git-scm.com/download/win).
-#### Installing `python`
-See [Python Downloads](https://www.python.org/downloads/) which should give you a download
-link for the version of windows you are running. At the time I started to put together these
-notes the current python version was 3.9.5 - when we installed this on Kai's windows machine,
-the `python` command in a console window mapped to the just installed python.
-#### Installing `jupyter notebooks`
-`jupyter notebooks` is written in python and uses python's `pip` installer. Once you have
-installed python
-#### Installing the `IJava` plugin for jupyter notebooks
-#### Installing `java`
+
 #### Installing `jintellij idea` - community edition
 
 
