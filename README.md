@@ -66,8 +66,12 @@ C:\Users\frc> pip install notebook
 You will see a lot of progress bars scroll by as notebook installs.
 
 #### Installing the `IJava` plugin for jupyter notebooks
-
-`jupyter notebooks` was originally written for python. We need to install a plugin for Java development
+`jupyter notebooks` was originally written for python. We need to install a plugin for Java development. The
+plugin is an open source github project [SpencerPark/IJava](https://github.com/SpencerPark/IJava). The
+latest release is [version 1.3.0](https://github.com/SpencerPark/IJava/releases/tag/v1.3.0), and at the bottom
+of that page is the download link for
+[ijava-1.3.0.zip](https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip) which
+you want to download. In your files explorer, go to your Download folder
 
 #### Installing `git`
 See [1.5 Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) where
