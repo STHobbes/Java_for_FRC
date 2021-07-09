@@ -94,9 +94,9 @@ directory. When you do this you will get a bunch printed out, and a new tab will
 displaying your notebook:
 
 <code>
-C:\Users\frc> <b>mkdir learningJava<\b>
-C:\Users\frc> <b>cd learningJava<\b>
-C:\Users\frc> <b>python -m notebook<\b>
+C:\Users\frc> <b>mkdir learningJava</b>  
+C:\Users\frc> <b>cd learningJava</b>  
+C:\Users\frc> <b>python -m notebook</b>  
 </code>
 
 
