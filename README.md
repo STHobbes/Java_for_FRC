@@ -43,7 +43,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 16.0.1+9-24, mixed mode, sharing)
 #### Installing `python`
 See [Python Downloads](https://www.python.org/downloads/) which should give you a download
 link for the version of windows you are running. At the time I started to put together these
-notes the current python version was 3.9.5 - when we installed this on Kai's windows machine
+notes the current python version was 3.9.5 (what we installed this on Kai's windows machine)
 
 if you run python in a console or command window you should be able to type `python` and
 see something like:
@@ -71,9 +71,35 @@ plugin is an open source github project [SpencerPark/IJava](https://github.com/S
 latest release is [version 1.3.0](https://github.com/SpencerPark/IJava/releases/tag/v1.3.0), and at the bottom
 of that page is the download link for
 [ijava-1.3.0.zip](https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip) which
-you want to download. In your files explorer, go to your Download folder
+you want to download. In your files explorer, go to your Download folder and right-click on the downloaded
+`ijava-1.3.0.zip` and select **`expand all`** to unzip the file. After the file is expended (unzipped), you
+should see an `ijava-1.3.0` folder in your `Downloads` folder. Assuming you are in your user folder
+with your command prompt (the command window opens to your user window by default) These are the
+commands you would use to install `ijava`
 
-#### Installing `git`
+`C:\Users\frc>` **`cd Downloads\iJava-1.3.0`** 
+`C:\Users\frc\Downloads\iJava-1.3.0>` **`python install.py`**
+`C:\Users\frc\Downloads\iJava-1.3.0\install.py:164: DeprecationWarning: replace is`
+` ignored. Installing a kernelspec always replaces an existing installation`
+` install_dest = KernelSpecManager().install_kernel_spec(`
+`Installed java kernel into "C:\ProgramData\jupyter\kernels\java"`
+`C:\Users\frc\Downloads\iJava-1.3.0>` **`cd ..\..`**
+`C:\Users\frc>`
+
+#### Running your own notebook for learning
+
+I recommend you create a directory (folder) for your exercises in learning Java. Below I created a
+`learningJava` directory, changed directory to `learningJava`, and started the notebook in that
+directory. When you do this you will get a bunch printed out, and a new tab will open in you browser
+displaying your notebook:
+
+`C:\Users\frc>` **`mkdir learningJava`**
+`C:\Users\frc>` **`cd learningJava`**
+`C:\Users\frc>` **`python -m notebook`**
+
+
+
+#### Installing `git`, and running this project's notebook
 See [1.5 Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) where
 there is a section on installing to windows. It notes the windows download is at
 [https://git-scm.com/download/win](https://git-scm.com/download/win).
