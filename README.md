@@ -77,13 +77,13 @@ should see an `ijava-1.3.0` folder in your `Downloads` folder. Assuming you are 
 with your command prompt (the command window opens to your user window by default) These are the
 commands you would use to install `ijava`
 
-`C:\Users\frc>` **`cd Downloads\iJava-1.3.0`**  
-`C:\Users\frc\Downloads\iJava-1.3.0>` **`python install.py`**  
+`C:\Users\frc>`**` cd Downloads\iJava-1.3.0`**  
+`C:\Users\frc\Downloads\iJava-1.3.0>`**` python install.py`**  
 `C:\Users\frc\Downloads\iJava-1.3.0\install.py:164: DeprecationWarning: replace is`  
 ` ignored. Installing a kernelspec always replaces an existing installation`  
 ` install_dest = KernelSpecManager().install_kernel_spec(`  
 `Installed java kernel into "C:\ProgramData\jupyter\kernels\java"`  
-`C:\Users\frc\Downloads\iJava-1.3.0>` **`cd ..\..`**  
+`C:\Users\frc\Downloads\iJava-1.3.0>`**` cd ..\..`**  
 `C:\Users\frc>`  
 
 #### Running your own notebook for learning
@@ -93,9 +93,11 @@ I recommend you create a directory (folder) for your exercises in learning Java.
 directory. When you do this you will get a bunch printed out, and a new tab will open in you browser
 displaying your notebook:
 
-`C:\Users\frc>` **`mkdir learningJava`**  
-`C:\Users\frc>` **`cd learningJava`**  
-`C:\Users\frc>` **`python -m notebook`**  
+<code>
+C:\Users\frc> <b>mkdir learningJava<\b>
+C:\Users\frc> <b>cd learningJava<\b>
+C:\Users\frc> <b>python -m notebook<\b>
+</code>
 
 
 
