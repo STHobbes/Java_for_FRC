@@ -154,15 +154,18 @@ I recommend you create a directory (folder) for your exercises in learning Java.
 directory. When you do this you will get a bunch printed out, and a new tab will open in you browser
 displaying your notebook:
 
+#### Running notebook in windows
+
 <blockquote><pre><code>
 C:\Users\frc> <b>mkdir learningJava</b>
 C:\Users\frc> <b>cd learningJava</b>
 C:\Users\frc\learningJava> <b>python -m notebook</b>
 </code></pre></blockquote>
 
+#### Running notebook in OSX
 
 
-#### Installing `git`, and running this project's notebook
+### Installing `git`, and running this project's notebook
 
 #### Windows Install/Setup
 See [1.5 Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -183,19 +186,3 @@ homebrew installation notes:
 on OSX, remember to set preferences.
 
 
-### OSX Install/Setup
-
-#### Installing `python`
-See [Python Downloads](https://www.python.org/downloads/) which should give you a download
-link for the version of OSX you are running. At the time I started to put together these
-notes the current python version was 3.9.5
-#### Installing `jupyter notebooks`
-To install jupyter notebooks into the just installed version of python, in a console
-window use the command:
-```
-pip3 install notebook
-```
-
-#### Installing the `IJava` plugin for jupyter notebooks
-#### Installing `java`
-#### Installing `jintellij idea` - community edition
