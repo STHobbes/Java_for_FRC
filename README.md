@@ -16,27 +16,27 @@ the fundamental language concepts of syntax, types, keywords, logic. if-then, lo
 and exception handling; before
 worrying about classes, inheritance, interfaces, abstract classes, etc.
 
-## Installing and Using this Project
+# Installing and Using this Project
 In order to really use this project, you need to install a lot of stuff. Installation
 is quite different for our two primary platforms - windows, and Mac (OSX). I have done
 all of the OSX installation in the comfort of my very own home, and have just gone
 through the Windows installation with Kai and on the driver station laptop. They are a
 bit different, so let's document the details:
 
-### Installing `java`
+## Installing `java`
 Go to the latest 
 [Java SE Development Kit 16 Downloads](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html):
 
-#### Windows Install/Setup
+### Windows Install/Setup
 Download the
 [Windows x64 Installer](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html#license-lightbox).
 Double-click on the downloaded installer in your Downloads folder to install.
 
-#### OSX Install/Setup
+### OSX Install/Setup
 Download the
 [macOS Installer](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html#license-lightbox).
 Double-click on the downloaded installer in your Downloads folder to install.
-#### Finishing Up, Windows or OSX
+### Finishing Up, Windows or OSX
 Verify you have the correct Java installed. Close and reopen your console terminal (to make sure it
 has the most recent changes to the environment) and type the command `java --version`. You should
 get something like this:
@@ -48,14 +48,14 @@ Java(TM) SE Runtime Environment (build 16.0.1+9-24)
 Java HotSpot(TM) 64-Bit Server VM (build 16.0.1+9-24, mixed mode, sharing)
 </code></pre></blockquote>
 
-### Installing `python`
+## Installing `python`
 See [Python Downloads](https://www.python.org/downloads/) which should give you a download
 link for the version of windows or OSX you are running. At the time I started to put together these
 notes the current python version was 3.9.5 (what we installed this on Kai's windows machine).
 
 Double-clock on the downloaded installer to install `python`.
 
-#### Windows Install/Setup
+### Windows Install/Setup
 If you run python in a console or command window you should be able to type `python` and
 see something like:
 <blockquote><pre><code>
@@ -68,7 +68,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Type `quit()` at the `>>>` prompt to end python. What you are looking for here is that the version number
 matches the version you just installed.
 
-#### OSX Install/Setup
+### OSX Install/Setup
 OSX ships with python 2.7 installed. Even after I install a new python version, if I type
 `python` at a console terminal I get something like:
 <blockquote><pre><code>
@@ -97,11 +97,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 roy@ROYs-iMac ~ %
 </code></pre></blockquote>
 
-### Installing `jupyter notebooks`
+## Installing `jupyter notebooks`
 `jupyter notebooks` is written in python and uses python's `pip` installer. This installer finds,
 downloads, and installs the latest version of a python package.
 
-#### Windows Install/Setup
+### Windows Install/Setup
 In a console window use the command:
 
 <blockquote><pre><code>
@@ -110,7 +110,7 @@ C:\Users\frc> <b>pip install notebook</b>
 
 You will see a lot of progress bars scroll by as notebook installs.
 
-#### OSX Install/Setup
+### OSX Install/Setup
 To install jupyter notebooks into the just installed version of python, in a console
 window use the command:
 
@@ -128,7 +128,7 @@ of that page is the download link for
 [ijava-1.3.0.zip](https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip) which
 you want to download.
 
-#### Windows Install/Setup
+### Windows Install/Setup
 In your files explorer, go to your Download folder and right-click on the downloaded
 `ijava-1.3.0.zip` and select **`expand all`** to unzip the file. After the file is expended (unzipped), you
 should see an `ijava-1.3.0` folder in your `Downloads` folder. Assuming you are in your user folder
@@ -147,14 +147,14 @@ C:\Users\frc>
 </code></pre></blockquote>
 
 
-#### Running your own notebook for learning Java
+### Running your own notebook for learning Java
 
 I recommend you create a directory (folder) for your exercises in learning Java. Below I created a
 `learningJava` directory, changed directory to `learningJava`, and started the notebook in that
 directory. When you do this you will get a bunch printed out, and a new tab will open in you browser
 displaying your notebook:
 
-#### Running notebook in windows
+### Running notebook in windows
 
 <blockquote><pre><code>
 C:\Users\frc> <b>mkdir learningJava</b>
@@ -162,24 +162,24 @@ C:\Users\frc> <b>cd learningJava</b>
 C:\Users\frc\learningJava> <b>python -m notebook</b>
 </code></pre></blockquote>
 
-#### Running notebook in OSX
+### Running notebook in OSX
 
 
-### Installing `git`, and running this project's notebook
+## Installing `git`, and running this project's notebook
 
 #### Windows Install/Setup
 See [1.5 Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 where there is a section on installing to windows. It notes the windows download is at
 [https://git-scm.com/download/win](https://git-scm.com/download/win).
 
-#### OSX Install/Setup
+### OSX Install/Setup
 See [1.5 Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 where there is a section on installing to MacOS. NOTE: I personally do not develop apple apps,
 so I have no need of, or use for xcode, which takes hours to download and install. I go to
 [OSX installer from the git website](https://git-scm.com/download/mac) and use the
 homebrew installation notes:
 
-#### Installing `jintellij idea` - community edition
+### Installing `jintellij idea` - community edition
 
 
 
