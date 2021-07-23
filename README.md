@@ -111,8 +111,10 @@ C:\Users\frc> <b>pip install notebook</b>
 You will see a lot of progress bars scroll by as notebook installs.
 
 ### OSX Install/Setup
-To install jupyter notebooks into the just installed version of python, in a console
-window use the command:
+To install jupyter notebooks into the just installed version of python, we use
+the `pip` installer, and similarly to running the latest version of python,
+we append a `3`in the console command to get the right version of `pip` to match
+the installed python. To install `noteboolk`::
 
 <blockquote><pre><code>
 roy@ROYs-iMac ~ % <b>pip3 install notebook</b>
@@ -136,18 +138,45 @@ with your command prompt (the command window opens to your user window by defaul
 commands you would use to install `ijava`
 
 <blockquote><pre><code>
-C:\Users\frc> <b>cd Downloads\iJava-1.3.0</b>
-C:\Users\frc\Downloads\iJava-1.3.0> <b>python install.py</b>
-C:\Users\frc\Downloads\iJava-1.3.0\install.py:164: DeprecationWarning: replace is
+C:\Users\frc> <b>cd Downloads\ijava-1.3.0</b>
+C:\Users\frc\Downloads\ijava-1.3.0> <b>python install.py</b>
+C:\Users\frc\Downloads\ijava-1.3.0\install.py:164: DeprecationWarning: replace is
  ignored. Installing a kernelspec always replaces an existing installation
  install_dest = KernelSpecManager().install_kernel_spec(
 Installed java kernel into "C:\ProgramData\jupyter\kernels\java"
-C:\Users\frc\Downloads\iJava-1.3.0> <b>cd ..\..</b>
+C:\Users\frc\Downloads\ijava-1.3.0> <b>cd ..\..</b>
 C:\Users\frc>
 </code></pre></blockquote>
 
+### OSX Install/Setup
+In your finder, go to your Download folder and double-click on the downloaded
+`ijava-1.3.0.zip` unzip the file. After the file unzipped, you
+should see an `ijava-1.3.0` folder in your `Downloads` folder. Assuming you are in your user folder
+with your command prompt (the command window opens to your user window by default) These are the
+commands you would use to install `ijava`
 
-### Running your own notebook for learning Java
+<blockquote><pre><code>
+roy@ROYs-iMac ~ % <b>cd Downloads/ijava-1.3.0</b>
+roy@ROYs-iMac ijava-1.3.0 % <b>python3 install.py</b>
+install.py:164: DeprecationWarning: replace is ignored. Installing a kernelspec always replaces an existing installation
+install_dest = KernelSpecManager().install_kernel_spec(
+Installed java kernel into "/usr/local/share/jupyter/kernels/java"
+roy@ROYs-iMac ijava-1.3.0 % <b>cd ../..</b>
+roy@ROYs-iMac ~ %
+</code></pre></blockquote>
+
+We have seen cases where there is a permissions error writing to `/usr/local/share/jupyter` which
+normally means the permissions on  the `/usr/local/share` directory don't allow you to
+write into that directory unless you are running as an admin user. In that case, try using
+
+<blockquote><pre><code>
+roy@ROYs-iMac ijava-1.3.0 % <b>sudo python3 install.py</b>
+</code></pre></blockquote>
+
+which will run the command as the superuser. You will need the admin password to do that, however, if
+this is your computer, you should have admin privileges, and the password will just be your normal password.
+
+## Running your own notebook for learning Java
 
 I recommend you create a directory (folder) for your exercises in learning Java. Below I created a
 `learningJava` directory, changed directory to `learningJava`, and started the notebook in that
@@ -164,10 +193,15 @@ C:\Users\frc\learningJava> <b>python -m notebook</b>
 
 ### Running notebook in OSX
 
+<blockquote><pre><code>
+roy@ROYs-iMac ~ % <b>mkdir learningJava</b>
+roy@ROYs-iMac ~ % <b>cd learningJava</b>
+roy@ROYs-iMac learningJava % <b>python3 -m notebook</b>
+</code></pre></blockquote>
 
 ## Installing `git`, and running this project's notebook
 
-#### Windows Install/Setup
+### Windows Install/Setup
 See [1.5 Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 where there is a section on installing to windows. It notes the windows download is at
 [https://git-scm.com/download/win](https://git-scm.com/download/win).
@@ -179,7 +213,7 @@ so I have no need of, or use for xcode, which takes hours to download and instal
 [OSX installer from the git website](https://git-scm.com/download/mac) and use the
 homebrew installation notes:
 
-### Installing `jintellij idea` - community edition
+### Installing ***jintellij idea*** - community edition
 
 
 
