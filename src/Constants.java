@@ -4,6 +4,6 @@ public class Constants {
 
     public static  void main(final String[] args) {
 //        DRIVE_LENGTH = 0.7;
-//        System.out.println("DRIVE_LENGTH = " + DRIVE_LENGTH);
+        System.out.println("DRIVE_LENGTH = " + DRIVE_LENGTH);
     }
 }

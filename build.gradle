@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:18.0.0'
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+version = '0.5.0'
